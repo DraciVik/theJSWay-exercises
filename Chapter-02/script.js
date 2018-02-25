@@ -38,3 +38,17 @@ Write a program that asks for a temperature in Celsius degrees, then displays it
 let celsius = Number(prompt("Enter the temperature in celsius"));
 const celsiusToFahrenheit = celsius * (9/5) + 32;
 console.log(celsiusToFahrenheit);
+
+
+// Variable swapping
+// Observe the following program.
+
+let number1 = 5;
+let number2 = 3;
+
+// TODO: type your code here (and nowhere else!)
+[number1, number2] = [number2, number1];
+
+console.log(number1); // Should show 3
+console.log(number2); // Should show 5
+// Add the necessary code to swap the values of variables number1 and number2.
