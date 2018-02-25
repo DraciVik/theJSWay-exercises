@@ -30,3 +30,11 @@ let rawPrice = Number(prompt("Enter the raw price so you can get the final one")
 const VAT = 0.206;
 let finalPrice = rawPrice * (1 + VAT);
 console.log(finalPrice);
+
+/*
+From Celsius to Fahrenheit degrees
+Write a program that asks for a temperature in Celsius degrees, then displays it in Fahrenheit degrees.
+*/
+let celsius = Number(prompt("Enter the temperature in celsius"));
+const celsiusToFahrenheit = celsius * (9/5) + 32;
+console.log(celsiusToFahrenheit);
