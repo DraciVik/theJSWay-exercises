@@ -56,9 +56,33 @@ if (nb1 > nb2) {
   }
 }
 console.log(nb1, nb2, nb3);
-Before executing it, try to guess the final values of variables nb1, nb2 and nb3 depending on their initial values. Complete the following table.
+//Before executing it, try to guess the final values of variables nb1, nb2 and nb3 depending on their initial values. Complete the following table.
 
 Initial values	   nb1 final value	    nb2 final value	      nb3 final value
 nb1=nb2=nb3=4			    0                    4                     12
 nb1=4,nb2=3,nb3=2			4                    3                      2
 nb1=2,nb2=4,nb3=0	    3                    4                      0
+
+
+/*
+Number of days in a month
+Write a program that accepts a month number (between 1 and 12), then shows the number of days of that month. Leap years are excluded. Incorrect inputs must be taken into account.
+*/
+let userInput = prompt("Enter a month number please");
+
+let months = {
+  1: 31,
+  2: 28,
+  3: 31,
+  4: 30,
+  5: 31,
+  6: 30,
+  7: 31,
+  8: 31,
+  9: 30,
+  10: 31,
+  11: 30,
+  12: 31
+};
+
+months.hasOwnProperty(userInput) ? `That month has ${months[userInput]} days` : `Please enter a valid month day`;
