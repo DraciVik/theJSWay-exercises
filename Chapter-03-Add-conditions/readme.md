@@ -1,0 +1,5 @@
+* [Final values](https://github.com/DraciVik/theJSWay-exercises/blob/master/Chapter-03-Add-conditions/final_values.js)
+* [Following day](https://github.com/DraciVik/theJSWay-exercises/blob/master/Chapter-03-Add-conditions/following_day.js)
+* [Following second](https://github.com/DraciVik/theJSWay-exercises/blob/master/Chapter-03-Add-conditions/following_second.js)
+* [Number comparison](https://github.com/DraciVik/theJSWay-exercises/blob/master/Chapter-03-Add-conditions/number_comparison.js)
+* [Number of days in a month](https://github.com/DraciVik/theJSWay-exercises/blob/master/Chapter-03-Add-conditions/number_of_days_in_a_month.js)
