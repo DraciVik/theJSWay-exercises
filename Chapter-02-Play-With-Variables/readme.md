@@ -1,0 +1,5 @@
+* [Final values](https://github.com/DraciVik/theJSWay-exercises/blob/master/Chapter-02-Play-With-Variables/Final-Values.js)
+* [From celsius to fahrenheit degrees](https://github.com/DraciVik/theJSWay-exercises/blob/master/Chapter-02-Play-With-Variables/From-Celsius-to-Fahrenheit-Degrees.js)
+* [Improved hello](https://github.com/DraciVik/theJSWay-exercises/blob/master/Chapter-02-Play-With-Variables/Improved-Hello.js)
+* [VAT calculation](https://github.com/DraciVik/theJSWay-exercises/blob/master/Chapter-02-Play-With-Variables/VAT-Calculation.js)
+* [Variable swapping](https://github.com/DraciVik/theJSWay-exercises/blob/master/Chapter-02-Play-With-Variables/Variable-Swapping.js)
