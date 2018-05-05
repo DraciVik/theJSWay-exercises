@@ -1,0 +1,5 @@
+* [Improved hello](https://github.com/DraciVik/theJSWay-exercises/blob/master/Chapter-05-Write-Functions/improvedHello.js)
+* [Minimum of two numbers](https://github.com/DraciVik/theJSWay-exercises/blob/master/Chapter-05-Write-Functions/minimumOfTwoNumbers.js)
+* [Number squaring](https://github.com/DraciVik/theJSWay-exercises/blob/master/Chapter-05-Write-Functions/numberSquaring.js)
+* [Calculator](https://github.com/DraciVik/theJSWay-exercises/blob/master/Chapter-05-Write-Functions/calculator.js)
+* [Circumference and area of a circle](https://github.com/DraciVik/theJSWay-exercises/blob/master/Chapter-05-Write-Functions/circumferenceAndAreaOfACircle.js)
