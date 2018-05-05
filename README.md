@@ -5,3 +5,4 @@ This is where I will put my solutions to the exercises in the [The JavaScript Wa
 * [Chapter 02 - Play with variables](https://github.com/DraciVik/theJSWay-exercises/tree/master/Chapter-02-Play-With-Variables)
 * [Chapter 03 - Add conditions](https://github.com/DraciVik/theJSWay-exercises/tree/master/Chapter-03-Add-conditions)
 * [Chapter 04 - Repeat Statements](https://github.com/DraciVik/theJSWay-exercises/tree/master/Chapter-04-Repeat-Statements)
+* [Chapter 05 - Write Functions](https://github.com/DraciVik/theJSWay-exercises/tree/master/Chapter-05-Write-Functions)
