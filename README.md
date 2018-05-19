@@ -6,3 +6,8 @@ This is where I will put my solutions to the exercises in the [The JavaScript Wa
 * [Chapter 03 - Add conditions](https://github.com/DraciVik/theJSWay-exercises/tree/master/Chapter-03-Add-conditions)
 * [Chapter 04 - Repeat Statements](https://github.com/DraciVik/theJSWay-exercises/tree/master/Chapter-04-Repeat-Statements)
 * [Chapter 05 - Write Functions](https://github.com/DraciVik/theJSWay-exercises/tree/master/Chapter-05-Write-Functions)
+* [Chapter 06 - Create Your First Objects](https://github.com/DraciVik/theJSWay-exercises/tree/master/Chapter-06-Create-your-first-objects)
+* [Chapter 07 - Store Data in Arrays](https://github.com/DraciVik/theJSWay-exercises/tree/master/Chapter-07-Store-data-in-arrays)
+* [Chapter 08 - Work With Strings](https://github.com/DraciVik/theJSWay-exercises/tree/master/Chapter-08-Work-With-Strings)
+* [Chapter 09 - Understand Object-oriented Programming](https://github.com/DraciVik/theJSWay-exercises/tree/master/Chapter-09-Understand-Object-oriented-Programming)
+
