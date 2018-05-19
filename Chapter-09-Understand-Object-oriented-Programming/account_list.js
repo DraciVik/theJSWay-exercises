@@ -8,16 +8,27 @@
 // A describe method returning the account description.
 // Write a program that creates three accounts: one belonging to Sean, another to Brad and the third one to Georges. These accounts are stored in an array. Next, the program credits 1000 to each account and shows its description.
 // */
-//
-// class Account {
-//   constructor(name) {
-//     this.name = name;
-//     this.balance = 0;
-//   }
-//   credit() {
-//     this.balance += balance;
-//   }
-//   describe() {
-//     return `owner`
-//   }
-// }
+
+class Account {
+  constructor(name) {
+    this.name = name;
+    this.balance = 0;
+  }
+  credit(amount) {
+    this.balance += amount;
+  }
+  describe() {
+    return `owner: ${this.name}, balance: ${this.balance}`;
+  }
+}
+
+const sean = new Account("Sean");
+const brad = new Account("Brad");
+const georges = new Account("Georges");
+
+const myArray = [sean, brad, georges];
+
+myArray.forEach(account => {
+  account.credit(1000);
+  console.log(account);
+});
