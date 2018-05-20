@@ -35,5 +35,10 @@ const governmentForms = [
 console.log(formsEndingWithCy);
 */
 const formsEndingWithCy = forms => {
-  return forms.filter(names => names.endsWith("cy"));
+  const obj = forms.filter(names => names.name.endsWith("cy"));
+  const newArray = []
+  for(const names of obj) {
+    newArray.push(names.name);
+  }
+  return newArray;
 }
