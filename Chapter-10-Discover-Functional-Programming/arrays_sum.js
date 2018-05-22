@@ -11,4 +11,4 @@ console.log(arraysSum); // Should show 31
 
 const arrays = [[1, 4], [11], [3, 5, 7]];
 const flattenedArray = arrays.reduce((lvl1, lvl2) =>  lvl1.concat(lvl2), []);
-const arraySum = flattenedArray.reduce((acc, value) => acc + value, 0);
+const arraysSum = flattenedArray.reduce((acc, value) => acc + value, 0);
