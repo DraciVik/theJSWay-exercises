@@ -22,3 +22,14 @@ All your code should be correctly indented.
 Names should be wisely chosen and adhere to the camelCase convention.
 Code duplication should be avoided.
 */
+
+
+let userOption = Number(prompt(`Choose an option:
+1 : Show links
+2 : Add a link
+3 : Remove a link
+0 : Quit`));
+
+if (userOption === 3) {
+  const links = linksList.map(x => x.link);
+}
