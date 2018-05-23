@@ -11,4 +11,4 @@ This is where I will put my solutions to the exercises in the [The JavaScript Wa
 * [Chapter 08 - Work With Strings](https://github.com/DraciVik/theJSWay-exercises/tree/master/Chapter-08-Work-With-Strings)
 * [Chapter 09 - Understand Object-oriented Programming](https://github.com/DraciVik/theJSWay-exercises/tree/master/Chapter-09-Understand-Object-oriented-Programming)
 * [Chapter 10 - Discover Functional Programming](https://github.com/DraciVik/theJSWay-exercises/tree/master/Chapter-10-Discover-Functional-Programming)
-* [Cha[ter 11 - Project - A Social News Programm](https://github.com/DraciVik/theJSWay-exercises/tree/master/Chapter-11-Project-a-social-news-program)
+* [Chapter 11 - Project - A Social News Program](https://github.com/DraciVik/theJSWay-exercises/tree/master/Chapter-11-Project-a-social-news-program)
