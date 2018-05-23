@@ -45,3 +45,19 @@ for (const student of students) {
 console.log(femaleStudentsResults);
 Refactor it using functional programming. Execution result must stay the same.
 */
+
+const females = (array, sex) => array.filter(item => item.sex === sex);
+
+const gradesSum = grades => grades.reduce((acc, value) => acc + value, 0);
+
+const femaleStudentResults = [];
+
+const femaleStudents = females(students, "f");
+femaleStudents.forEach(student => {
+  const gradeSum = gradesSum(student.grades);
+  const averageGrade = gradeSum / student.grades.length;
+  femaleStudentResults.push({
+    avgGrade: averageGrade,
+    name: student.name
+  });
+})
