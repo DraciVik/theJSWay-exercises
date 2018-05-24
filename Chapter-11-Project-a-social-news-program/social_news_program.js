@@ -22,14 +22,38 @@ All your code should be correctly indented.
 Names should be wisely chosen and adhere to the camelCase convention.
 Code duplication should be avoided.
 */
-
+const myLinks = [];
+class Links {
+  constructor(title, url, author) {
+    this.title = title;
+    this.url = url;
+    this.author = author;
+  }
+}
 
 let userOption = Number(prompt(`Choose an option:
 1 : Show links
 2 : Add a link
 3 : Remove a link
-0 : Quit`));
+0 : Quit`
+));
 
-if (userOption === 3) {
-  const links = linksList.map(x => x.link);
+if(userOption === 1) {
+  const links = [];
+  for(let i = 0; i < myLinks.length; i++) {
+    links.push(`${i + 1}: ${myLinks[i].title} (${myLinks[i].url}. Author: ${myLinks[i].author})`);
+  }
+  alert(links);
+}
+if(userOption === 2) {
+  let newTitle = "";
+  let newURL = "";
+  let newAuthor = "";
+  newTitle = prompt(`Please enter the title`);
+  newURL = prompt(`Enter the URL please`);
+  if (!newURL.toLowerCase().startsWith("http://" || "https://")) {
+    newURL = "http://" + newURL;
+  }
+  newAuthor = prompt(`Enter the author please`);
+  myLinks.push(new Links(newTitle, newURL, newAuthor));
 }
