@@ -37,23 +37,31 @@ let userOption = Number(prompt(`Choose an option:
 3 : Remove a link
 0 : Quit`
 ));
-
-if(userOption === 1) {
-  const links = [];
-  for(let i = 0; i < myLinks.length; i++) {
-    links.push(`${i + 1}: ${myLinks[i].title} (${myLinks[i].url}. Author: ${myLinks[i].author})`);
+while(userOption !== 0) {
+  if(userOption === 1) {
+    const links = [];
+    for(let i = 0; i < myLinks.length; i++) {
+      links.push(`${i + 1}: ${myLinks[i].title} (${myLinks[i].url}. Author: ${myLinks[i].author})
+      `);
+    }
+    alert(links);
   }
-  alert(links);
-}
-if(userOption === 2) {
-  let newTitle = "";
-  let newURL = "";
-  let newAuthor = "";
-  newTitle = prompt(`Please enter the title`);
-  newURL = prompt(`Enter the URL please`);
-  if (!newURL.toLowerCase().startsWith("http://" || "https://")) {
-    newURL = "http://" + newURL;
+  if(userOption === 2) {
+    let newTitle = "";
+    let newURL = "";
+    let newAuthor = "";
+    newTitle = prompt(`Please enter the title`);
+    newURL = prompt(`Enter the URL please`);
+    if ((!newURL.startsWith("http://")) || (!newURL.startsWith("https://"))) {
+      newURL = "http://" + newURL;
+    }
+    newAuthor = prompt(`Enter the author please`);
+    myLinks.push(new Links(newTitle, newURL, newAuthor));
   }
-  newAuthor = prompt(`Enter the author please`);
-  myLinks.push(new Links(newTitle, newURL, newAuthor));
+  userOption = Number(prompt(`Choose an option:
+  1 : Show links
+  2 : Add a link
+  3 : Remove a link
+  0 : Quit`
+  ));
 }
