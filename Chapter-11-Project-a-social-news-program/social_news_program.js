@@ -41,7 +41,7 @@ while(userOption !== 0) {
   if(userOption === 1) {
     const links = [];
     for(let i = 0; i < myLinks.length; i++) {
-      links.push(`${i + 1}: ${myLinks[i].title} (${myLinks[i].url}. Author: ${myLinks[i].author})
+      links.push(`${i + 1}: ${myLinks[i].title} (${myLinks[i].url}). Author: ${myLinks[i].author}
       `);
     }
     alert(links);
@@ -52,8 +52,10 @@ while(userOption !== 0) {
     let newAuthor = "";
     newTitle = prompt(`Please enter the title`);
     newURL = prompt(`Enter the URL please`);
-    if ((!newURL.startsWith("http://")) || (!newURL.startsWith("https://"))) {
-      newURL = "http://" + newURL;
+    if (newURL.startsWith("http://") === false) {
+      if (newURL.startsWith("https://") === false) {
+        newURL = "http://" + newURL;
+      }
     }
     newAuthor = prompt(`Enter the author please`);
     myLinks.push(new Links(newTitle, newURL, newAuthor));
