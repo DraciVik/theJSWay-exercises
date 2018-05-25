@@ -42,7 +42,7 @@ while(userOption !== 0) {
     const links = [];
     for(let i = 0; i < myLinks.length; i++) {
       links.push(`${i + 1}: ${myLinks[i].title} (${myLinks[i].url}). Author: ${myLinks[i].author}
-      `);
+`);
     }
     alert(links);
   }
