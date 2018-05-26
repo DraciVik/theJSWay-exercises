@@ -44,9 +44,13 @@ while(userOption !== 0) {
       links.push(`${i + 1}: ${myLinks[i].title} (${myLinks[i].url}). Author: ${myLinks[i].author}
 `);
     }
-    alert(links);
+    if(links.length === 0) {
+      alert(`There are no links yet. Please populate`);
+    } else {
+      alert(links);
+    }
   }
-  if(userOption === 2) {
+  if(userOption ===2) {
     let newTitle = "";
     let newURL = "";
     let newAuthor = "";
@@ -72,6 +76,7 @@ while(userOption !== 0) {
 
     myLinks.splice(indexToBeDeleted, 1);
   }
+
   userOption = Number(prompt(`Choose an option:
   1 : Show links
   2 : Add a link
