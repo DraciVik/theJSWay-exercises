@@ -60,12 +60,17 @@ while(userOption !== 0) {
     newAuthor = prompt(`Enter the author please`);
     myLinks.push(new Links(newTitle, newURL, newAuthor));
   }
+
   if(userOption === 3) {
-    let indexToBeDeleted = Number(prompt(`Enter the index of the link to be removed (between 1 and ${myLinks.length})`));
-    while(indexToBeDeleted < 1 || indexToBeDeleted > myLinks.length) {
-      indexToBeDeleted = Number(prompt(`Please enter a valid index number`));
+    let indexToBeDeleted = Number(prompt(`Enter the index of the link to be removed (between 1 and ${myLinks.length})`)) -1;
+    if(indexToBeDeleted < 0) {
+      indexToBeDeleted = Number(prompt(`Please enter a valid index number`)) - 1;
+    };
+    if(indexToBeDeleted > myLinks.length - 1) {
+      indexToBeDeleted = Number(prompt(`Please enter a valid index number`)) -1;
     }
-    myLinks.splice(indexToBeDeleted + 1, 1);
+
+    myLinks.splice(indexToBeDeleted, 1);
   }
   userOption = Number(prompt(`Choose an option:
   1 : Show links
