@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Showing a node's child</title>
+</head>
+
+<body>
+  <h1>Some musical instruments</h1>
+  <ul>
+    <li id="clarinet" class="wind woodwind">
+      The <a href="https://en.wikipedia.org/wiki/Clarinet">clarinet</a>
+    </li>
+    <li id="saxophone" class="wind woodwind">
+      The <a href="https://en.wikipedia.org/wiki/Saxophone">saxophone</a>
+    </li>
+    <li id="trumpet" class="wind brass">
+      The <a href="https://en.wikipedia.org/wiki/Trumpet">trumpet</a>
+    </li>
+    <li id="violin" class="chordophone">
+      The <a href="https://en.wikipedia.org/wiki/Violin">violin</a>
+    </li>
+  </ul>
+  <script>
+  /*Write a JavaScript program containing a linkInfo() function that shows:
+
+The total number of links.
+The target of the first and last links.
+This function should work even if no links are present.
+
+Expected result
+
+Add the following new instrument at the end of the HTML list, then check your program's new result.
+
+<li id="harpsichord">
+  The <a href="https://en.wikipedia.org/wiki/Harpsichord">harpsichord</a>
+</li>*/
+
+  function linkInfo() {
+    let nodes = document.querySelectorAll("a");
+    console.log(nodes.length);
+    console.log(nodes[0]);
+    console.log(nodes[nodes.length-1]);
+  };
+  linkInfo();
+  </script>
+</body>
+
+</html>
