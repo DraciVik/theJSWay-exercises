@@ -12,3 +12,6 @@ This is where I will put my solutions to the exercises in the [The JavaScript Wa
 * [Chapter 09 - Understand Object-oriented Programming](https://github.com/DraciVik/theJSWay-exercises/tree/master/Chapter-09-Understand-Object-oriented-Programming)
 * [Chapter 10 - Discover Functional Programming](https://github.com/DraciVik/theJSWay-exercises/tree/master/Chapter-10-Discover-Functional-Programming)
 * [Chapter 11 - Project - A Social News Program](https://github.com/DraciVik/theJSWay-exercises/tree/master/Chapter-11-Project-a-social-news-program)
+* [Chapter 12 - What's a Web Page](https://github.com/DraciVik/theJSWay-exercises/tree/master/Chapter-12-What's-a-Web-Page)
+* [Chapter 13 - Discover the DOM](https://github.com/DraciVik/theJSWay-exercises/tree/master/Chapter-13-Discover-the-DOM)
+* [Chapter 14 - Traverse the DOM](https://github.com/DraciVik/theJSWay-exercises/tree/master/Chapter-14-Traverse-the-DOM)
