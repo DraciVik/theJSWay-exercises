@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Showing a node's child</title>
+</head>
+
+<body>
+  <h3 class="beginning">Some languages</h3>
+  <div id="content">
+      <ul id="languages">
+          <li id="cpp">C++</li>
+          <li id="java">Java</li>
+          <li id="csharp">C#</li>
+          <li id="php">PHP</li>
+      </ul>
+  </div>
+  <script>
+    document.getElementById("languages").innerHTML += '<li id="c">C</li>';
+    document.querySelector("h3").textContent += " for programming";
+    document.querySelector("h3").id = "title";
+    const titleElement = document.querySelector("h3");
+    titleElement.classList.remove("beginning");
+    titleElement.classList.add("title");
+    console.log(titleElement);
+    const pythonElement = document.createElement("li"); // Create an "li" element
+    pythonElement.id = "python";          // Define element ID
+    pythonElement.textContent = "Python"; // Define its text content
+    document.getElementById("languages").appendChild(pythonElement); // Insert the new element into the DOM
+    const rubyElement = document.createElement("li"); // Create an "li" element
+    rubyElement.id = "ruby"; // Define element ID
+    rubyElement.appendChild(document.createTextNode("Ruby")); // Define its text content
+    document.getElementById("languages").appendChild(rubyElement); // Insert the new element into the DOM
+    const perlElement = document.createElement("li"); // Create an "li" element
+    perlElement.id = "perl"; // Define element ID
+    perlElement.textContent = "Perl"; // Define its text content
+    // Insert the new element before the "PHP" node
+    document.getElementById("languages").insertBefore(perlElement, document.getElementById("php"));
+    document.getElementById('languages').insertAdjacentHTML("afterBegin", '<li id="javascript">JavaScript</li>');
+    const lispElement = document.createElement("li"); // Create an li element
+    lispElement.id = "lisp";          // Define its ID
+    lispElement.textContent = "Lisp"; // Define its text content
+    // Replace the element identified by "perl" with the new element
+    document.getElementById("languages").replaceChild(lispElement, document.getElementById("perl"));
+    // Remove the element with the "lisp" id
+    document.getElementById("languages").removeChild(document.getElementById("lisp"));
+    /*
+    Improve the languages example to add a paragraph (<p> tag) containing a link (<a> tag) to the URL https://en.wikipedia.org/wiki/List_of_programming_languages.
+    */
+
+  </script>
+</body>
+
+</html>
