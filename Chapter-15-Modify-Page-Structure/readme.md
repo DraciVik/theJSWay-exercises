@@ -1,0 +1,5 @@
+* [Adding a paragraph](https://github.com/DraciVik/theJSWay-exercises/blob/master/Chapter-15-Modify-Page-Structure/addingAParagraph.html)
+* [Newspaper List](https://github.com/DraciVik/theJSWay-exercises/blob/master/Chapter-15-Modify-Page-Structure/newspaperList.html)
+* [Mini Dictionary](https://github.com/DraciVik/theJSWay-exercises/blob/master/Chapter-15-Modify-Page-Structure/mini-dictionary.html)
+* [Updating Colors](https://github.com/DraciVik/theJSWay-exercises/blob/master/Chapter-15-Modify-Page-Structure/updatingColors.html)
+* [Information About an Element](https://github.com/DraciVik/theJSWay-exercises/blob/master/Chapter-15-Modify-Page-Structure/informationAboutAnElement.html)
