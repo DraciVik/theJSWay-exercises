@@ -15,3 +15,5 @@ This is where I will put my solutions to the exercises in the [The JavaScript Wa
 * [Chapter 12 - What's a Web Page](https://github.com/DraciVik/theJSWay-exercises/tree/master/Chapter-12-What's-a-Web-Page)
 * [Chapter 13 - Discover the DOM](https://github.com/DraciVik/theJSWay-exercises/tree/master/Chapter-13-Discover-the-DOM)
 * [Chapter 14 - Traverse the DOM](https://github.com/DraciVik/theJSWay-exercises/tree/master/Chapter-14-Traverse-the-DOM)
+* [Chapter 15 - Modify Page Structure](https://github.com/DraciVik/theJSWay-exercises/tree/master/Chapter-15-Modify-Page-Structure)
+* [Chapter 16 - React to Events](https://github.com/DraciVik/theJSWay-exercises/tree/master/Chapter-16-React-to-Events)
