@@ -3,9 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Showing a node's child</title>
+    <title>Adding a paragraph</title>>
 </head>
-
 <body>
   <h3 class="beginning">Some languages</h3>
   <div id="content">
@@ -17,7 +16,6 @@
       </ul>
   </div>
   <script>
-    document.getElementById("languages").innerHTML += '<li id="c">C</li>';
     document.querySelector("h3").textContent += " for programming";
     document.querySelector("h3").id = "title";
     const titleElement = document.querySelector("h3");
@@ -48,6 +46,12 @@
     /*
     Improve the languages example to add a paragraph (<p> tag) containing a link (<a> tag) to the URL https://en.wikipedia.org/wiki/List_of_programming_languages.
     */
+    const paragraph = document.createElement("p");
+    paragraph.id = "pGraf";
+    document.body.appendChild(paragraph);
+    document.getElementById("pGraf").insertAdjacentHTML("afterBegin", "Here is a more complete <a>list</a> of languages")
+    document.querySelector("a").setAttribute("href", "https://en.wikipedia.org/wiki/List_of_programming_languages");
+    document.getElementById("languages").innerHTML += '<li id="c">C</li>';
 
   </script>
 </body>
