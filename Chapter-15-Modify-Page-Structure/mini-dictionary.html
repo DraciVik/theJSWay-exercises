@@ -3,19 +3,38 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Showing a node's child</title>
+    <title>Mini-dictionary</title>
 </head>
 
 <body>
   <h3>A mini-dictionary</h3>
   <div id="content"></div>
   <script>
-    /*
-    Write a program that shows on the page a list of newspapers defined in a JavaScript array. Each link must be clickable.
 
-    // Newspaper list
-    const newspapers = ["https://www.nytimes.com", "https://www.washingtonpost.com", "http://www.economist.com"];
-    */
+    const words = [{
+      term: "Procrastination",
+      definition: "Avoidance of doing a task that needs to be accomplished"
+    }, {
+      term: "Tautology",
+      definition: "logical argument constructed in such a way that it is logically irrefutable"
+    }, {
+      term: "Oxymoron",
+      definition: "figure of speech that juxtaposes elements that appear to be contradictory"
+    }];
+
+    //Use the HTML <dl> tag to create the list (more on this tag). Each term of the dictionary should be given more importance with a <strong> tag.
+
+    const list = document.createElement('dl');
+
+    words.forEach(listItem => {
+      const term = document.createElement('dt');
+      const definition = document.createElement('dd');
+      term.innerHTML = listItem.term;
+      definition.innerHTML = listItem.definition;
+      list.appendChild(term);
+      list.appendChild(definition);
+      document.getElementById('content').appendChild(list);
+    });
 
   </script>
 </body>
