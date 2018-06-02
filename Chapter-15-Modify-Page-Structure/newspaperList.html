@@ -15,15 +15,17 @@
     */
     // Newspaper list
     const newspapers = ["https://www.nytimes.com", "https://www.washingtonpost.com", "http://www.economist.com"];
-    const linksToNewspapers = (newspapersArray) => {
-      for(const newspaper of newspapersArray) {
-        const oneLink = document.createElement("p");
-        oneLink.class = "paperSite";
-        oneLink.insertAdjacentHTML("afterbegin", `<a href="${newspaper}">${newspaper}</a>`)
-        document.body.appendChild(oneLink);
+    const createList = linkList => {
+      const ulElement = document.createElement("ul");
+      for (link of linkList) {
+        const listElement = ulElement.appendChild(document.createElement("li"));
+        const linkElement = listElement.appendChild(document.createElement("a"));
+        linkElement.setAttribute("href", link);
+        linkElement.textContent = link;
       }
-    }
-    linksToNewspapers(newspapers);
+      document.getElementById("content").appendChild(ulElement);
+    };
+    createList(newspapers);
   </script>
 </body>
 

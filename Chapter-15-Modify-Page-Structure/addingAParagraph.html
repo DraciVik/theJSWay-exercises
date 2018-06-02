@@ -47,11 +47,9 @@
     Improve the languages example to add a paragraph (<p> tag) containing a link (<a> tag) to the URL https://en.wikipedia.org/wiki/List_of_programming_languages.
     */
     const paragraph = document.createElement("p");
-    paragraph.id = "pGraf";
+    paragraph.innerHTML = "Here is a more complete <a>list</a> of languages";
+    paragraph.querySelector("a").setAttribute("href", "https://en.wikipedia.org/wiki/List_of_programming_languages");
     document.body.appendChild(paragraph);
-    document.getElementById("pGraf").insertAdjacentHTML("afterBegin", "Here is a more complete <a>list</a> of languages")
-    document.querySelector("a").setAttribute("href", "https://en.wikipedia.org/wiki/List_of_programming_languages");
-    document.getElementById("languages").innerHTML += '<li id="c">C</li>';
 
   </script>
 </body>

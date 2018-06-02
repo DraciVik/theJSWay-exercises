@@ -22,6 +22,14 @@
     /*
   Write a program that adds to the page a list showing the height and width of the element identified by "content".
     */
+    document.getElementById("infos").appendChild(document.createTextNode("Information about the element"));
+    const contentStyles = getComputedStyle(document.getElementById("content"))
+    const ulElement = document.createElement("ul");
+    const height = ulElement.appendChild(document.createElement("li"));
+    const width = ulElement.appendChild(document.createElement("li"));
+    height.textContent = `height: ${contentStyles.height}`;
+    width.textContent = `width: ${contentStyles.width}`;
+    document.getElementById("infos").appendChild(ulElement);
 
   </script>
 </body>

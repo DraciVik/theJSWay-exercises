@@ -24,17 +24,19 @@
 
     //Use the HTML <dl> tag to create the list (more on this tag). Each term of the dictionary should be given more importance with a <strong> tag.
 
-    const list = document.createElement('dl');
-
-    words.forEach(listItem => {
-      const term = document.createElement('dt');
-      const definition = document.createElement('dd');
-      term.innerHTML = listItem.term;
-      definition.innerHTML = listItem.definition;
-      list.appendChild(term);
-      list.appendChild(definition);
-      document.getElementById('content').appendChild(list);
-    });
+    const definitionList = words => {
+      const dlElement = document.createElement("dl");
+      for (word of words) {
+        const dtElement = document.createElement("dt");
+        dtElement.innerHTML = `<strong>${word.term}</strong>`;
+        const ddElement = document.createElement("dd");
+        ddElement.innerHTML = word.definition;
+        dlElement.appendChild(dtElement);
+        dlElement.appendChild(ddElement);
+      }
+      document.getElementById("content").appendChild(dlElement);
+    }
+    definitionList(words);
 
   </script>
 </body>

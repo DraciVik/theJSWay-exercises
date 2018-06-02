@@ -19,12 +19,15 @@
     /*
     Write a program that asks the user for the new text color, and then asks for the new background color. The page is then updated accordingly.
     */
-    let newTextColor = prompt(`Please enter a new text color`);
-    let newBackgroundColor = prompt(`Please enter a new background color`);
-    const divTags = document.getElementsByTagName("div");
-    for(div of divTags) {
-      Object.assign(div.style, {color: newTextColor, backgroundColor: newBackgroundColor});
-    }
+    const colorUpdate = (textColor, backgroundColor) => {
+      const divElements = document.getElementsByTagName("div");
+      for (div of divElements) {
+        Object.assign(div.style, {color: textColor, backgroundColor: backgroundColor});
+      }
+    };
+    const textColor = prompt("Enter a text color");
+    const backgroundColor = prompt("Enter a background color");
+    colorUpdate(textColor, backgroundColor);
 
   </script>
 </body>
