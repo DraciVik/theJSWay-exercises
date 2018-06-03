@@ -2,8 +2,8 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title>Showing a node's child</title>
+  <meta charset="utf-8">
+  <title>Showing a node's child</title>
 </head>
 
 <body>
@@ -19,7 +19,17 @@
 
 Bonus points for adding the possibility of changing a dessert's name when clicking on it.
     */
-
+    document.getElementById("addButton").addEventListener("click", e => {
+      const dessertName = prompt("enter a desert name please");
+      const dessertElement = document.createElement("li");
+      dessertElement.textContent = dessertName;
+      document.addEventListener("click", e => {
+        const dessertName = prompt(`Change ${dessertElement.textContent}`); 
+        dessertElement.textContent = dessertName;
+      });
+      document.getElementById("desserts").appendChild(dessertElement);
+      e.stopPropagation();
+    });
 
   </script>
 </body>
