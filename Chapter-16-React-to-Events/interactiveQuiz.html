@@ -2,34 +2,54 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title>Showing a node's child</title>
+  <meta charset="utf-8">
+  <title>Interactive Quiz</title>
 </head>
 
 <body>
   <div id="content"></div>
   <script>
-    /*
+
     // List of questions (statement + answer)
-const questions = [
-  {
-    statement: "2+2?",
-    answer: "2+2 = 4"
-  },
-  {
-    statement: "In which year did Christopher Columbus discover America?",
-    answer: "1492"
-  },
-  {
-    statement:
-      "What occurs twice in a lifetime, but once in every year, twice in a week but never in a day?",
-    answer: "The E letter"
-  }
-];
-*/
-//Complete this code to display the questions in the <div> element of the page, with a "Show the answer" button next to each question. Clicking this button replaces it with the answer for this question.
+    const questions = [
+      {
+        statement: "2+2?",
+        answer: "2+2 = 4"
+      },
+      {
+        statement: "In which year did Christopher Columbus discover America?",
+        answer: "1492"
+      },
+      {
+        statement:
+          "What occurs twice in a lifetime, but once in every year, twice in a week but never in a day?",
+        answer: "The E letter"
+      }
+    ];
 
-
+    //Complete this code to display the questions in the <div> element of the page, with a "Show the answer" button next to each question. Clicking this button replaces it with the answer for this question.
+    const interactiveQuiz = questions => {
+      let i = 0;
+      const dlElement = document.createElement("dl");
+      for (question of questions) {
+        i++;
+        const dtElement = dlElement.appendChild(document.createElement("dt"));
+        const buttonElement = dlElement.appendChild(document.createElement("button"));
+        const ddElement = document.createElement("p");
+        dtElement.textContent = `Question ${i}: ${question.statement}`;
+        ddElement.textContent = question.answer;
+        buttonElement.textContent = "Show Answer";
+        buttonElement.addEventListener("click", e => {
+          dlElement.removeChild(buttonElement);
+          dlElement.appendChild(ddElement);
+        });
+        return dlElement;
+      }
+    };
+    const contentElement = document.getElementById("content");
+    for (question of questions) {
+      contentElement.appendChild(interactiveQuiz(questions));
+    };
   </script>
 </body>
 
