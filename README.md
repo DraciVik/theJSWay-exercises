@@ -17,3 +17,4 @@ This is where I will put my solutions to the exercises in the [The JavaScript Wa
 * [Chapter 14 - Traverse the DOM](https://github.com/DraciVik/theJSWay-exercises/tree/master/Chapter-14-Traverse-the-DOM)
 * [Chapter 15 - Modify Page Structure](https://github.com/DraciVik/theJSWay-exercises/tree/master/Chapter-15-Modify-Page-Structure)
 * [Chapter 16 - React to Events](https://github.com/DraciVik/theJSWay-exercises/tree/master/Chapter-16-React-to-Events)
+* [Chapter 17 - Manipulate forms](https://github.com/DraciVik/theJSWay-exercises/tree/master/Chapter-17-Manipulate-Forms)
