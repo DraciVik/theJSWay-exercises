@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Character list</title>
+</head>
+
+<body>
+    <h1>A few of the Game of Thrones characters</h1>
+    <form>
+        <label for="house">House</label>:
+        <select name="house" id="house">
+            <option value="" selected>Select a house</option>
+        </select>
+    </form>
+
+    <p>
+        <ul id="characters"></ul>
+    </p>
+    <script>
+        //The starter JavaScript code is as follows.
+
+        // Character list. Each house has a name and a code
+        const houses = [
+            {
+                code: "ST",
+                name: "Stark"
+            },
+            {
+                code: "LA",
+                name: "Lannister"
+            },
+            {
+                code: "BA",
+                name: "Baratheon"
+            },
+            {
+                code: "TA",
+                name: "Targaryen"
+            }
+        ];
+
+        // Return an array of characters belonging to a house
+        const getCharacters = houseCode => {
+            switch (houseCode) {
+                case "ST":
+                    return ["Eddard", "Catelyn", "Robb", "Sansa", "Arya", "Jon Snow"];
+                case "LA":
+                    return ["Tywin", "Cersei", "Jaime", "Tyrion"];
+                case "BA":
+                    return ["Robert", "Stannis", "Renly"];
+                case "TA":
+                    return ["Aerys", "Daenerys", "Viserys"];
+                default:
+                    return []; // Empty array
+            }
+        };
+        // Complete this code so that:
+
+        // The house dropdown list is filled during page load.
+        // The list of characters is shown whenever the user selects a new house in the list.
+    </script>
+</body>
+
+</html>
