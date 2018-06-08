@@ -53,6 +53,29 @@
             "Autria",
             "Azerbaïjan"
         ];
+
+        const queryCountry = input => {
+            const regex = new RegExp(input);
+            const results = countryList.filter(country => regex.test(country));
+            return results;
+        };
+
+        inputElement = document.getElementById("country");
+        inputElement.addEventListener("input", e => {
+            const suggestions = queryCountry(inputElement.value);
+            const suggestionsElement = document.getElementById("suggestions");
+            const currentSuggestions = document.createElement("div");
+            suggestions.forEach(suggestion => {
+                const suggestionElement = document.createElement("p");
+                suggestionElement.textContent = suggestion;
+                currentSuggestions.appendChild(suggestionElement);
+            })
+            suggestionsElement.innerHTML = "";
+            suggestionsElement.appendChild(currentSuggestions);
+            if (inputElement.value.length === 0) {
+                suggestionsElement.innerHTML = "";
+            }
+        });
     </script>
 </body>
 
