@@ -60,6 +60,31 @@
 
         // The house dropdown list is filled during page load.
         // The list of characters is shown whenever the user selects a new house in the list.
+        const popualteSelect = options => {
+            const selectElement = document.querySelector("select");
+            for (option of options) {
+                const optionElement = document.createElement("option");
+                optionElement.value = option.code;
+                optionElement.textContent = option.name;
+                selectElement.appendChild(optionElement);
+            }
+            return selectElement;
+        };
+        selectElement = popualteSelect(houses);
+        // Add event listener
+        selectElement.addEventListener("change", e => {
+            const characters = getCharacters(selectElement.value);
+            const characterListElement = document.getElementById("characters");
+            // clear ul
+            characterListElement.innerHTML = "";
+            // add new characters
+            characters.forEach(character => {
+                const listElement = document.createElement("li");
+                listElement.textContent = character;
+                // add li to DOM
+                characterListElement.appendChild(listElement);
+            });
+        });
     </script>
 </body>
 
