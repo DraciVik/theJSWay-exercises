@@ -18,3 +18,5 @@ This is where I will put my solutions to the exercises in the [The JavaScript Wa
 * [Chapter 15 - Modify Page Structure](https://github.com/DraciVik/theJSWay-exercises/tree/master/Chapter-15-Modify-Page-Structure)
 * [Chapter 16 - React to Events](https://github.com/DraciVik/theJSWay-exercises/tree/master/Chapter-16-React-to-Events)
 * [Chapter 17 - Manipulate forms](https://github.com/DraciVik/theJSWay-exercises/tree/master/Chapter-17-Manipulate-Forms)
+* [Chapter 18 - Animate Elements](https://github.com/DraciVik/theJSWay-exercises/tree/master/Chapter-18-Animate-Elements)
+* [Chapter 19 - Project a Social News Web Page](https://github.com/DraciVik/theJSWay-exercises/tree/master/Chapter-19-Project-A-Social-News-Web-Page)
