@@ -22,7 +22,7 @@ class Character {
     this.strength = strength;
     this.xp = 0; // XP is always zero for new characters
     this.gold = 10; // GOLD is always 10 for new characters
-    this.key = 1;  // key is always 1 for new characters
+    this.key = 1; // key is always 1 for new characters
   }
   // Attack a target
   attack(target) {
@@ -38,12 +38,11 @@ class Character {
         target.health = 0;
         const bonusXP = 10;
         console.log(
-          `${this
-            .name} eliminated ${target.name} and wins ${bonusXP} experience points`
+          `${this.name} eliminated ${target.name} and wins ${bonusXP} experience points`
         );
         this.xp += bonusXP;
-        this.gold += 10;
-        this.key += 1;
+        this.gold += target.gold;
+        this.key += target.key;
       }
     } else {
       console.log(`${this.name} can't attack (they've been eliminated)`);
@@ -51,7 +50,6 @@ class Character {
   }
   // Return the character description
   describe() {
-    return `${this.name} has ${this.health} health points, ${this
-      .strength} as strength, ${this.xp} XP points ${this.gold} gold and ${this.key} key(s)`;
+    return `${this.name} has ${this.health} health points, ${this.strength} as strength, ${this.xp} XP points ${this.gold} gold and ${this.key} key(s)`;
   }
 }
